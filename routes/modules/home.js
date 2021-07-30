@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
 
-// Read : View all the expenses
+// Read : View the url input page
 router.get('/', (req, res) => {
-  res.send('hello from simple server : home)')
+  res.render('index')
 })
 
 module.exports = router
