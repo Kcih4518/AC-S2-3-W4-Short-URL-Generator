@@ -15,6 +15,9 @@ const app = express()
 app.engine('hbs', expressHandlebars({ defaultLayout: 'main', extname: '.hbs' }))
 app.set('view engine', 'hbs')
 
+// Setting static files
+app.use(express.static('public'))
+
 // Setting body-parser
 app.use(express.urlencoded({ extended: true }))
 
