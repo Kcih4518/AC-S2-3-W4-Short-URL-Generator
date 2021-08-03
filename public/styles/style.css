@@ -1,0 +1,26 @@
+h1.web-title {
+  font-size: 65px;
+  color: blueviolet;
+}
+.web-body {
+  height: 100%;
+  width: 100%;
+}
+
+#url-icon {
+  font-size: 5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#inputURL {
+  min-width: 30rem;
+}
+
+#Shorten-button {
+  min-width: 12rem;
+}
+
+#success-remind {
+  font-size: 25px;
+}
