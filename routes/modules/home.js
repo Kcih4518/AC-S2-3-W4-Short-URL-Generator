@@ -31,4 +31,15 @@ router.post('/', async (req, res) => {
     .catch((error) => console.log(error))
 })
 
+// Read: Redirect the webpage to originURL by querying the database shortURL
+router.get('/:shortURL', (req, res) => {
+  const shortURL = req.params.shortURL
+  return URL.find({ shortURL })
+    .lean()
+    .then((url) => {
+      res.redirect(`${url[0].originURL}`)
+    })
+    .catch((error) => console.log(error))
+})
+
 module.exports = router
