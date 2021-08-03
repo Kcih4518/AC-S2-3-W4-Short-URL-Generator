@@ -3,11 +3,11 @@
   <div class="mb-3">
     <input type="url" class="form-control" id="inputURL" name='originURL' placeholder="Input URL here" required>
   </div>
-  <button type="submit" class="btn btn-outline-primary">Shorten</button>
+  <button type="submit" class="btn btn-outline-primary" id="Shorten-button">Shorten</button>
 </form>
 {{else}}
 <div class="mb-3">
-  <p>Success! Please use this link:</p>
+  <p id="success-remind">Success! Please use this link:</p>
   <a id="URL" href="{{urlProtocolAndServer}}{{shortURL}}" target="_blank"
     class="fs-3">{{urlProtocolAndServer}}{{shortURL}}</a>
 </div>
